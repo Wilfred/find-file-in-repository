@@ -44,6 +44,7 @@
 ;;
 ;; Recommended keybinding:
 ;;    (global-set-key (kbd "C-x C-f") 'find-file-in-repository)
+;;    (global-set-key (kbd "C-c C-x C-f") 'ido-find-file) ;; fallback
 
 ;;; Code:
 (defun ffir-shell-command (command file-separator working-dir)
