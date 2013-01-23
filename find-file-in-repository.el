@@ -23,11 +23,11 @@
 ;;; Commentary:
 
 ;; This libaray provides a drop-in replacement for find-file (ie. the
-;; "C-x f" command), that auto-completes all files in the current git,
+;; "C-x C-f" command), that auto-completes all files in the current git,
 ;; mercurial, or other type of repository. When outside of a
 ;; repository, find-file-in-repository conveniently drops back to
 ;; using find-file, (or ido-find-file), which makes it a suitable
-;; replacement for the "C-x f" keybinding.
+;; replacement for the "C-x C-f" keybinding.
 ;;
 ;; It is similar to, but faster and more robust than the find-file-in-project
 ;; package. It relies on git/mercurial/etc to provide fast cached file name
@@ -43,7 +43,7 @@
 ;; be happy to include your modifications.
 ;;
 ;; Recommended keybinding:
-;;    (global-set-key (kbd "C-x f") 'find-file-in-repository)
+;;    (global-set-key (kbd "C-x C-f") 'find-file-in-repository)
 
 ;;; Code:
 (defun ffir-shell-command (command file-separator working-dir)
